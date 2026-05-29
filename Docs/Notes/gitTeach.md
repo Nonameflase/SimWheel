@@ -38,3 +38,10 @@ git status
 
 ```
 git config --global http.sslVerify false
+```
+
+==救命神器==
+
+```
+git reflog
+```

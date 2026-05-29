@@ -1,67 +1,42 @@
-# ======================================
-# 完全匹配你的目录结构的终极忽略规则
-# ======================================
-
-# 1. 所有编译输出目录
+# =========================
+# Build Output
+# =========================
 **/Output/
 **/Objects/
 **/Listings/
-**/Build/
 **/Debug/
 **/Release/
-**/RTE/
-**/DebugConfig/
+build/
 
-# 2. 所有编译中间文件
-*.o
-*.d
-*.axf
-*.elf
+# =========================
+# Binary Files
+# =========================
 *.hex
 *.bin
+*.elf
+*.axf
 *.map
 *.lst
-*.crf
-*.dep
-*.htm
-*.log
-*.rpt
-*.trc
-*.sct
-*.dbgconf
+*.o
+*.d
 
-# 3. Keil 个人配置文件（绝对不能提交！）
+# =========================
+# Keil
+# =========================
 *.uvguix.*
 *.uvoptx
 *.bak
+*.dep
+*.crf
 *.tmp
-*.user
-*.crash
-*.jlink
 
-# 4. CMSIS 不需要的文件
-**/Drivers/CMSIS/Core_A/
-**/Drivers/CMSIS/DAP/
-**/Drivers/CMSIS/Documentation/
-**/Drivers/CMSIS/DSP/Examples/
-**/Drivers/CMSIS/DSP/ComputeLibrary/
-**/Drivers/CMSIS/NN/
-**/Drivers/CMSIS/RTOS/
-**/Drivers/CMSIS/RTOS2/
-**/Drivers/CMSIS/Zone/
-
-# 5. HAL库 不需要的模板文件
-**/Drivers/STM32F4xx_HAL_Driver/Src/*_template.c
-
-# 6. 系统和编辑器临时文件
+# =========================
+# OS
+# =========================
 .DS_Store
 Thumbs.db
-Desktop.ini
-*.swp
-*.swo
-*~
-*.orig
 
-# 7. 根目录不需要提交的
-/Logs/
-/Tools/
+# =========================
+# VSCode
+# =========================
+.vscode/
