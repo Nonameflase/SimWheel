@@ -4,15 +4,15 @@
 int main(void)
 {
     HAL_Init();
-    sys_stm32_clock_init(336, 8, 2, 7);         /* ÉèÖÃÊ±ÖÓ,168Mhz */
-	delay_init(168);                            /* ÑÓÊ±³õÊ¼»¯ */
+    sys_stm32_clock_init(336, 8, 2, 7);         /* ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½,168Mhz */
+	delay_init(168);                            /* ï¿½ï¿½Ê±ï¿½ï¿½Ê¼ï¿½ï¿½ */
 	Led_Init();
 
     while (1)
     {
 		LED(1);
-		delay_ms(500);		//PB2µÆÁÁ
+		delay_ms(500);		//PB2ï¿½ï¿½ï¿½ï¿½
 		LED(0);
-		delay_ms(100);		//PB2µÆÃð
+		delay_ms(100);		//PB2ï¿½ï¿½ï¿½ï¿½
     }
 }
